@@ -10,8 +10,7 @@
 */
 
 header {
-    background-color:white;
-    
+    background-color: white;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -34,10 +33,12 @@ header .logo h1 span.char {
     color: red;
 
 }
-header nav .toggler{
-display: none;
+
+header nav .toggler {
+    display: none;
 }
-header nav .toggler i{
+
+header nav .toggler i {
     color: black;
     font-size: 30px;
 }
@@ -80,90 +81,12 @@ header nav ul li.color2 a {
     font-weight: 200px;
 
 }
-@media (max-width:600px){
-  
-    .container{
-        width: 90%;
-        /* margin: auto; */
-       
-    }
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    header .logo{
-        padding-left: 50px;
-    }
-    .navbar .toggler {
-        display: block;
-        margin-top: 0px;
-
-
-    }
-    
-    .navbar ul {
-        display: none;
-    }
-    .container .features {
-      display: flex;
-      height: 100%;
-      width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    .container .features{
-        justify-content: space-between; 
-    }
-    .container .features #left{
-        width: 50%;
-       
-    }
-    .container .features #right{
-        width: 50%;
-      
-    
-    }
-    .container .section-three .downcontent1{
-   width: 100%;
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-    }
-    .container .section-three .downcontent2 div{
-        width: 100%;
-        padding-left: 10px;
-        /* background-color: red; */
-        
-    }
-    .container .section4 .down-content .feature-block{
-        width: 100%;
-    }
-    .contact{
-        padding: 50px;
-    }
-    .container-2{
-        flex-direction: column;
-    }
-    .container-2 .contactInfo{
-        display: flex;
-        flex-wrap: wrap;
-         justify-content: flex-start;
-       
-    }
-    .container-2 .contactInfo .box 
-  {  
-        width: 100%;
-       /* justify-content: flex-end; */
-    }
-
-}
 
 /* end of nav bar  */
 section {
     overflow: hidden;
     margin-top: 50px;
-    padding-top:50px ;
+    padding-top: 50px;
 }
 
 /* start with section 1 */
@@ -242,7 +165,9 @@ section {
 /* end section1(hero section ) */
 /* start with upcontent of section 2 */
 .container {
-    width: 80%;
+    width: 1440px;
+    justify-content: center;
+
     /* background-color: red; */
     margin: auto;
 }
@@ -274,7 +199,7 @@ section {
     transition: all 0.5s
 }
 
-    
+
 
 
 .container .features #left {
@@ -531,11 +456,11 @@ start with section 4
     flex-direction: column;
     padding: 100px;
     width: 50%;
-   
+
 }
 
 .container-2 .contactInfo .box {
-    position:relative;
+    position: relative;
     padding: 10px 0px;
 
 }
@@ -615,7 +540,7 @@ start with section 4
     width: 100%;
 } */
 /* start with footer */
-.footer{
+.footer {
     /* border-top: 10px #000000 solid;
     width: 100%; */
     background: #2a2c30;
@@ -623,15 +548,158 @@ start with section 4
 
 }
 
-.footer .copyright{
+.footer .copyright {
     background: #fff;
     margin-top: 10px;
     text-align: center;
-    padding: 25px;
+    padding: 25px 0px;
 }
-.footer .copyright .container .creadits a{
-    text-decoration: none ;
+
+.footer .copyright .container .creadits a {
+    text-decoration: none;
     color: #ed893d;
 
 }
 
+@media (max-width:600px) {
+    .container {
+        width: 90%;
+
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        padding-left: 50px;
+    }
+
+    .navbar .toggler {
+        display: block;
+        margin-top: 0px;
+
+
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .container .features {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        padding: 30px 0px;
+        transition: all 0.5s;
+    }
+
+    .container .features #left {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .features #right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .section-three .downcontent1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .section-three .downcontent1 div {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 30px 0px;
+        justify-content: center;
+    }
+
+    .container .section-three .downcontent2 div {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .container .section4 .down-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .container .section4 .down-content div {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 0px;
+        margin-bottom: 30px;
+    }
+
+
+    .container .section4 .down-content .feature-block {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .container-2 .contactInfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .container-2 .contactInfo .box {
+        width: 100%;
+        /* justify-content: flex-end; */
+    }
+
+    .container-2 .contactInfo {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        /* background-color: #ed893d; */
+    }
+
+    .contact-form .inputs .inputBox textarea {
+        width: 100%
+            /* height: 233px; */
+
+    }
+    .contact-form .inputs{
+        width: 100%;
+    }
+
+
+    .contact-form .inputs button {
+        /* background-color:red; */
+        /* width: 100%; */
+        margin-top: 20px;
+        margin-left: 50px;
+        justify-content: center;
+    }
+
+}
